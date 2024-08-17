@@ -112,6 +112,32 @@ li{
 .btn:active{
     box-shadow: var(--shadowSupport);
 }
+.common-heading{
+    font-size:4.5rem;
+    font-weight: 600;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    position: relative;
+}
+.common-heading::before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--helper);
+    border-radius: 50%;
+}
+.common-heading::after{
+    content: "";
+    position: absolute;
+    top: 119%;
+    left: 1.5rem;
+    min-width: 20rem;
+    background-color: var(--helper);
+    height: .3rem;
+}
 /* <!-- Header Section End... -->
 
 <!-- Hero Section Start.... --> */
@@ -150,5 +176,95 @@ li{
     align-items: center;
     justify-content: end;
 }
+/* <!--  Hero Section End... -->
 
+<!-- Bio Section Start.... --> */
+.bio-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bio-img img{
+    width: 75%;
+    box-shadow: -2rem -2rem 0 0 var(--helper);
+    display: inline-block;
+}
+.bio-data-state{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 4rem;
+}
+.bio-progress-bar{
+    width: 90%;
+    height: .8rem;
+    background-color: var(--para-tint);
+    border-radius: 10rem;
+    position: relative;
+    box-shadow: var(--shadow);
+}
+.bio-progress-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: inherit;
+    background: var(--gradientSupport);
+    border-radius: 10rem;
+}
+.bio-progress::before{
+    width: 80%;
+}
+.bio-progress1::before{
+    width: 99%;
+}
+.bio-progress2::before{
+    width: 90%;
+}
+.bio-progress3::before{
+    width: 85%;
+}
+.bio-progress4::before{
+    width: 70%;
+}
+.bio-state{
+    position: relative;
+}
 
+.bio-state span{
+    position: absolute;
+    top: 4rem;
+    width: 3rem;
+    height: 2rem;
+    background-color: var(--helper);
+    color: var(--helper-tint);
+    text-align: center;
+}
+.pro-1{
+    left: 70%;
+}
+.pro-2{
+    left: 87%;
+}
+.pro-3{
+    left: 79%;
+}
+.pro-4{
+    left: 74%;
+}
+.pro-5{
+    left: 61%;
+}
+
+.bio-state span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: .8rem solid var(--helper);
+    border-color: transparent;
+    border-bottom-color: var(--helper);
+    left: .8rem;
+    top: -1.3rem;
+}
