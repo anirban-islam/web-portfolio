@@ -24,6 +24,4 @@ p_btns.addEventListener('click', (e) =>{
     p_img_elem.forEach((curElem) => curElem.classList.add("p-images-not-active"));
     img_active.forEach((curElem) => curElem.classList.remove("p-images-not-active"));
 
-    // p-btn--1
-
 })

@@ -95,6 +95,9 @@ li{
     grid-template-columns: repeat(2, 1fr);
  }
  .grid-four-colum{
+    grid-template-columns: repeat(4, 1fr);
+ }
+ .grid-tree-colum{
     grid-template-columns: repeat(3, 1fr);
  }
 
@@ -142,6 +145,7 @@ li{
     background-color: var(--helper);
     height: .3rem;
 }
+
 /* <!-- Header Section End... -->
 
 <!-- Hero Section Start.... --> */
@@ -338,5 +342,89 @@ li{
 }
 .p-images-not-active{
     display: none;
+
+}
+
+
+/* <!-- Protfolio Section End... -->
+
+<!-- Work Section Start.... --> */
+
+.section-work-data{
+    background: var(--gradient);
+    text-align: center;
+    transition: all 0.7s linear;
+    color: var(--white);
+}
+.counter-numbers{
+    font-size: 4rem;
+    color: var(--white);
+}
+.section-work-data p{
+    color: var(--white);
+    text-transform: capitalize;
+}
+/* <!-- Work Section End... -->
+
+<!--  Our Service Section Start.... --> */
+
+.section-service{
+    transition: all 0.7s linear;
+}
+.section-service p{
+    max-width: 60rem;
+}
+.section-service .grid{
+    margin-top: 8rem;
+    row-gap: 8rem;
+}
+.service-box{
+    text-align: center;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 5px;
+    padding: 6.4rem 3.4rem;
+    transition: all .2s linear;
+}
+.service-box:hover ,.service-box:active{
+    transform: translateY(-3rem);
+}
+.service-icon{
+    width: 6rem;
+    height: 6rem;
+    background-color: rgba(144, 172, 209, 0.5);
+    display: inline-block;
+    border-radius: 75% 25% 76% 24% / 22% 84% 16% 78%;
+    padding: 1rem 1.5rem;
+    position: relative;
+    columns: var(--heading);
+    animation: watar-wave 3s linear infinite;
+}
+.service-icon::after{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50% -50%);
+    width: 95%;
+    height: 90%;
+    border-radius:75% 25% 76% 24% / 22% 84% 16% 78%;
+    border: 1px solid var(--black);
+}
+@keyframes watar-wave{
+    0%{
+       border-radius: 75% 25% 76% 24% / 22% 84% 16% 78%; 
+    }
+    50%{
+        border-radius: 10% 75% 20% 84% / 60% 15% 16% 28%; 
+    }
+    100%{
+        border-radius: 75% 25% 76% 24% / 22% 84% 16% 78%; 
+    }
+    
+}
+.service-box h3{
+    text-transform: capitalize;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 
 }
