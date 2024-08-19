@@ -86,6 +86,15 @@ li{
 .navbar-link:active{
     color: var(--helper);
 }
+.mobile-navbar-btn{
+    display: none;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
 /* Reuseable code */
  .section{
     padding: 5rem;
@@ -677,4 +686,72 @@ li{
   .footer:active{
     color: var(--white);
 
+  }
+
+
+  /* Media Quariy */
+  @media (max-width: 980px) {
+    .header{
+        position: sticky;
+        padding:1rem;
+        height: 5rem;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 3px solid var(--black);
+        color: var(--black);
+        
+     
+    }
+    .mobile-nav-icon{
+        width: 3rem;
+        height: 2rem;
+        color: var(--black);
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .nav-bar{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--gradient);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all .5s linear;
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar .navbar-list .navbar-link:link, 
+    .nav-bar .navbar-list .navbar-link:visited{
+        color: var(--black);
+        font-size: 2.5rem;
+    }
+    .active .nav-bar{
+        transform: translateX(0%);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+        display: none;
+
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+        display: block;
+
+    }
   }
