@@ -25,3 +25,20 @@ p_btns.addEventListener('click', (e) =>{
     img_active.forEach((curElem) => curElem.classList.remove("p-images-not-active"));
 
 })
+
+// <==================================>
+// Feedback Swiper
+// <==================================>
+
+var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      slidesPerView: 2,
+      autoplay: {
+        delay: 2500,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
