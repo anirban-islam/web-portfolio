@@ -42,3 +42,27 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
       },
     });
+
+// <==================================>
+//Number Counter
+// <==================================>
+
+  const counterNum = document.querySelectorAll(".counter-numbers");
+  const speed = 200;
+
+  counterNum.forEach((curElem) => {
+      const updateNumber = () => {
+      const targetNum = parseInt(curElem.dataset.number);
+      const intialNum = parseInt(curElem.innerText);
+      const incrementNum = Math.trunc(targetNum / speed);
+
+      if (intialNum < targetNum) {
+        curElem.innerText = `${intialNum + incrementNum}+` ;
+        setTimeout(updateNumber , 10);
+      };
+        
+      
+    };
+
+    updateNumber();
+  });
