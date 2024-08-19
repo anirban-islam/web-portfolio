@@ -98,7 +98,6 @@ li{
 /* Reuseable code */
  .section{
     padding: 5rem;
-   
  }
  .grid {
     display: grid;
@@ -125,8 +124,7 @@ li{
     font-weight: 500;
     cursor: pointer;
     border-radius: .5rem;
-    transition: all .3s ease;
-    
+    transition: all .3s ease;   
 }
 .btn:hover, 
 .btn:active{
@@ -695,6 +693,8 @@ li{
         position: sticky;
         padding:1rem;
         height: 5rem;
+        top: 0;
+        left: 0;
     }
     .mobile-navbar-btn{
         display: block;
@@ -705,12 +705,14 @@ li{
      
     }
     .mobile-nav-icon{
-        width: 3rem;
-        height: 2rem;
+        width: 3.5rem;
+        height: 2.5rem;
         color: var(--black);
         cursor: pointer;
+        display: flex;
         align-items: center;
         justify-content: center;
+       
         
     }
     .nav-bar{
@@ -737,7 +739,7 @@ li{
     .nav-bar .navbar-list .navbar-link:link, 
     .nav-bar .navbar-list .navbar-link:visited{
         color: var(--black);
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .active .nav-bar{
         transform: translateX(0%);
@@ -754,4 +756,82 @@ li{
         display: block;
 
     }
-  }
+    .section{
+        padding: 1rem;
+     }
+     .btn{
+        padding: .8rem 3rem;
+        color: var(--helper-tint);
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        border-radius: .5rem;
+    }
+    .common-heading{
+        font-size:3rem;
+        margin-bottom: 3rem;
+    }
+    .common-heading::before{
+        width: 1rem;
+        height: 1rem;
+    }
+    .common-heading::after{
+        left: 1rem;
+        min-width: 10rem;
+    }
+    h1{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    p{
+        color: var(--para);
+        line-height: 1.8;
+        font-size: 1.2rem;
+    }
+    .mobile-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .hero-heading{
+        font-size: 3rem;
+    }
+    .hero-pera{
+        max-width: 70%;
+    }
+    .hireme-btn{
+        margin-top: 4rem;
+    }
+    .section-hero-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-img{
+        width: 70%;
+    }
+    .grid-tow-colum{
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .grid-tree-colum{
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .mobile-bio{
+        flex-direction: column-reverse;
+        display: flex;
+     }
+     .bio-img img{
+        width: 50%;
+     }
+     .p-btns{
+       margin:1.5rem 0rem;
+     }
+     .protfolio-images{
+        width: 100%;
+        padding: 0;
+        
+     }
+}
