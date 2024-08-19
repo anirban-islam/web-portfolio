@@ -89,6 +89,7 @@ li{
 /* Reuseable code */
  .section{
     padding: 5rem;
+   
  }
  .grid {
     display: grid;
@@ -527,6 +528,153 @@ li{
     margin-top: 1rem;
     gap: 0;
   }
-  .section1{
-    margin: 2rem 10rem;
+
+
+/*   
+  <!-- feedback serviceSection End... -->
+
+  <!--  freelancing Section Start.... --> */
+
+  .secction-freelanching{
+    background-image: url(/images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    position: relative;
+    transition: all 0.7s linear;
+    text-align: center;
+    height: 30rem;
+   
+    
+  }
+  .secction-freelanching .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--helper);
+    opacity: 0.3;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    margin-top: -30rem;
+  }
+  .text-data{
+    position: relative;
+    margin-top: -2rem;
+    padding: 3rem;
+  }
+  .secction-freelanching h2{
+    font-size: 4rem ;
+    position: relative;
+    color: var(--white);
+  }
+  .secction-freelanching p{
+    color: var(--white);
+  }
+  .secction-freelanching span{
+    color: aquamarine;
+
+  }
+  
+
+  /* <!-- freelancing serviceSection End... -->
+
+  <!--  contact Section Start.... --> */ 
+  .contact-main{
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 9rem;
+    transition: all .7s linear;
+  }
+.contact-main form{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.contact-main input , .contact-main textarea{
+    padding: 1.2rem 2rem;
+    border: 0.1rem solid #c9c9c9;
+    font-size: 1.5rem;
+    font-family: "work sans";
+    width: 100%;
+}
+.contact-main input[type="submit"]{
+    max-width: 30%;
+    border: none;
+    margin-top: -1rem;
+}
+.contact-main .grid{
+    gap: 1.8rem;
+}
+
+
+
+  /* <!-- contact serviceSection End... -->
+
+  <!--  Footer Section Start.... --> */ 
+  .footer{
+    background-color: var(--heading);
+    transition:  all 0.3s linear;
+  }
+  .footer h3{
+    color: var(--white);
+    margin-bottom: 3rem;
+  }
+  .f-about p{
+    color:#adadad ;
+  }
+  .f-links ul ,.f-services ul , .f-address address{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .f-links li ,
+  .f-links li a ,
+  .f-services li ,
+  .f-services li a{
+    font-size: 1.5rem;
+   color: #adadad;
+  }
+  .f-links span ,
+  .f-services span ,
+  .f-address span{
+    margin-right: 1rem;
+  }
+  .f-address p ,
+  .f-address p a{
+    font-style: normal;
+    color: #adadad;
+  }
+  .f-social-icons{
+    display: flex;
+    margin: 5rem 0;
+    text-align: center;
+    color: #adadad;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .f-social-icons .icon{
+    width: 3rem;
+    height: 4rem;
+    color: var(--white);
+    align-items: center;
+    display: inline-block;
+    background-color: rgba(144, 172, 209, 0.5) ;
+    padding: .8rem .8rem;
+    position: relative;
+    animation: watar-wave 3s linear infinite;
+  }
+
+  .f-cardits p{
+    text-align: center;
+    color: yellow;
+  }
+  .footer a:hover , 
+  .footer:active{
+    color: var(--white);
+
   }
