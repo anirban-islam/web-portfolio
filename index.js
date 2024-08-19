@@ -44,7 +44,7 @@ p_btns.addEventListener('click', (e) =>{
 var swiper = new Swiper(".mySwiper", {
       slidesPerView: "auto",
       spaceBetween: 30,
-      slidesPerView: 2,
+      slidesPerView: 1,
       autoplay: {
         delay: 2500,
       },

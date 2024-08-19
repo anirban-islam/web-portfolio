@@ -827,11 +827,68 @@ li{
         width: 50%;
      }
      .p-btns{
-       margin:1.5rem 0rem;
+       gap: 1rem;
+       padding: 1rem;
+       width: 100%;
+
+
      }
      .protfolio-images{
         width: 100%;
         padding: 0;
         
      }
+     .grid-four-colum{
+        grid-template-columns: repeat(2, 1fr);
+     }
+     .counter-numbers{
+        font-size: 1.7rem;   
+     }
+     .mobile-work-data{
+        gap: 1rem;
+     }
+     .mobile-service-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+     }
+     .swiper-client-mdg::before {
+        border:  2rem solid var(--white);
+        border-color: transparent;
+        border-top-color: var(--helper);
+       
+      }
+      .client-img{
+        width: 10rem;
+        padding: 1rem 0rem;
+      }
+      .swiper-client-data{
+        align-items: center;
+        margin-bottom: 3rem;
+        gap: 1;
+      }
+      .text-data h2{
+        font-size: 2.5rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .text-data{
+        padding: 1rem;
+        margin-top: 3rem;
+      }
+      .secction-freelanching{
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+      }
+      .secction-freelanching .overlay{
+        margin-top:-20rem;
+      }
+      .contact-main{
+        margin-top: 1rem;
+      }
+      .mobile-f{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+      }
 }
