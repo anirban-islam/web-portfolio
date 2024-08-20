@@ -33,42 +33,38 @@
         
         </div>
              <!--  contact Section Start.... -->
-      <section class="section section-contact">
-        <div class="container">
-            <h2 class="common-heading">Contact Us</h2>
-        </div>
-        <!-- Maps Embaded -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58144.75384607232!2d88.56487461081059!3d24.379664336615612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbefa96a38d031%3A0x10f93a950ed6f410!2sRajshahi!5e0!3m2!1sen!2sbd!4v1724066215614!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <!-- Maps End -->
-        <div class="contact-main">
-            <form action="#">
-                <div class="grid grid-tow-colum ">
-                    <div>
-                        <label for="username"></label>
-                        <input type="text" name="username" id="username" placeholder="Name">
-                    </div>
-                    <div>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
+             <section class="section section-contact">
+                <div class="container">
+                    <h2 class="common-heading">Contact Us</h2>
                 </div>
-                <div>
-                    <input type="text" name="sunject" placeholder="Subject">
-                
+                <div class="contact-main">
+                    <form action="https://formspree.io/f/meojlrll"
+                    method="POST">
+                        <div class="grid grid-tow-colum ">
+                            <div>
+                                <label for="username"></label>
+                                <input type="text" name="username" id="username" placeholder="Name" required autocomplete="off">
+                            </div>
+                            <div>
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" name="subject" placeholder="Subject" autocomplete="off">
+                        
+                        </div>
+                        <div>
+                            <label for="textarea"></label>
+                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" id="submit" class="btn" value="Send Massage">
+                        </div>
+        
+                    </form>
                 </div>
-                <div>
-                    <label for="textarea"></label>
-                    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" name="submit" id="submit" class="btn" value="Send Massage">
-                </div>
-
-            </form>
-        </div>
-      </section>
-
+              </section>
         <!-- contact Section End... -->
 
 
